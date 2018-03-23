@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TopComponent } from './top/top.component';
+import { BottomComponent } from './bottom/bottom.component';
+import { ProxyService } from './proxy.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopComponent,
+    BottomComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    ProxyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
